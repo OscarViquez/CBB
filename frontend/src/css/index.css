@@ -1,0 +1,52 @@
+@import "./variable.css";
+
+/* ---------------------------------------------------------------------------------------- */
+
+/* Main */
+main {
+  min-height: 80vh;
+}
+
+.fas{
+  color: #000;
+}
+/* Landing ----------------*/
+.Landing {
+  background: lightgreen;
+}
+
+
+/* About ----------------*/
+.About {
+  background: lightsalmon;
+}
+
+
+/* Room ----------------*/
+.Room {
+  background: lightgrey;
+}
+
+
+/* Amenities ----------------*/
+.Amt {
+  background: lightsteelblue;
+}
+
+
+/* RatesCalender ----------------*/
+.RatesCalender {
+  background: lightyellow;
+}
+
+
+/* footer----------------*/
+footer {
+  background: orange;
+}
+/* ---------------------------------------------------------------------------------------- */
+@media only screen and (max-width: 768px) {
+  footer {
+    background: var(--main-bg-color);
+  }
+}

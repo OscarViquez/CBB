@@ -1,10 +1,35 @@
+import React from 'react'
+import { Container } from 'react-bootstrap'
+import Header from './components/Header'
 
-import './App.css';
+import LandingSection from './components/LandingSection'
+import AboutSection from './components/AboutSection'
+import RoomSection from './components/RoomSection'
+import Amenities from './components/Amenities'
+import RatesCalender from './components/RatesCalender'
+import Footer from './components/Footer'
+
+
+import './css/index.css';
+
+
 
 function App() {
   return (
     <div className="App">
-      <h1> Coast B n B</h1>
+      <Header />
+      <main>
+        <LandingSection />
+
+        <Container>
+          <AboutSection />
+          <RoomSection />
+          <Amenities />
+          <RatesCalender />
+        </Container>
+        
+      </main>
+      <Footer />
     </div>
   );
 }
