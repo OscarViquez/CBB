@@ -7,38 +7,66 @@ main {
   min-height: 80vh;
 }
 
-.fas{
+.fas {
   color: #000;
 }
-/* Landing ----------------*/
-.Landing {
-  background: lightgreen;
+
+.Nav {
+  background: #fff;
 }
 
+/* Body ----------------*/
+body {
+  font-family: var(--ff-secondary);
+}
+
+/* Landing ----------------*/
+.Landing {
+  color: #fff;
+
+  margin: 4rem 0 0 0;
+  padding: 20rem 8rem;
+
+  background: url("../images/Zoom-bg-bluffton-3.jpg");
+  background-size: cover;
+}
+
+.Landing-Greeting {
+  color: #fff;
+
+  font-family: var(--ff-primary);
+  font-size: var(--fs-xl);
+  font-weight: var(--fw-med);
+
+  animation: var(--animation-FadeIn);
+}
+
+.Landing-Description {
+  font-size: var(--fs-xs);
+  font-weight: var(--fw-med);
+
+  animation: var(--animation-FadeIn3);
+}
 
 /* About ----------------*/
 .About {
   background: lightsalmon;
 }
 
-
 /* Room ----------------*/
 .Room {
   background: lightgrey;
 }
-
 
 /* Amenities ----------------*/
 .Amt {
   background: lightsteelblue;
 }
 
-
 /* RatesCalender ----------------*/
 .RatesCalender {
   background: lightyellow;
 }
-
 
 /* footer----------------*/
 footer {
@@ -46,6 +74,43 @@ footer {
 }
 /* ---------------------------------------------------------------------------------------- */
 @media only screen and (max-width: 768px) {
+  main {
+    min-height: 80vh;
+  }
+
+  .fas {
+    color: #000;
+  }
+  /* Landing ----------------*/
+  .Landing {
+    margin: 4rem 0 0 0;
+    padding: 20rem 4rem;
+
+    background: url("../images/Zoom-bg-bluffton-3.jpg");
+    background-size: cover;
+  }
+
+  /* About ----------------*/
+  .About {
+    background: lightsalmon;
+  }
+
+  /* Room ----------------*/
+  .Room {
+    background: lightgrey;
+  }
+
+  /* Amenities ----------------*/
+  .Amt {
+    background: lightsteelblue;
+  }
+
+  /* RatesCalender ----------------*/
+  .RatesCalender {
+    background: lightyellow;
+  }
+
+  /* footer----------------*/
   footer {
     background: var(--main-bg-color);
   }

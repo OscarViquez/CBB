@@ -3,9 +3,9 @@ import { Navbar, Nav, Container } from 'react-bootstrap';
 
 const Header = () => {
     return (
-        <header>
+        <header className='Nav'>
 
-            <Navbar bg="light" variant='light' expand="lg" collapseOnSelect>
+            <Navbar bg="none" variant='light' expand="lg" collapseOnSelect>
                 <Container>
                     <Navbar.Brand href="/">Coast BnB</Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
