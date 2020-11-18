@@ -1,0 +1,38 @@
+@import "./variable.css";
+
+/* || Navigaton Bar || ---------------- */
+
+main {
+    /* the min height will affect the footer position */
+    min-height: 80vh;
+  }
+  
+  .Nav .Active {
+    background: #171c1f;
+  }
+  
+  .navbar--items {
+    color: #fff;
+  
+    margin: 0 3rem;
+  
+    font-family: var(--ff-primary);
+    font-size: var(--fs-xs);
+    font-weight: var(--fw-bold);
+  }
+  
+  #nav--item1 {
+    animation: var(--animation-NavSlide1);
+  }
+  
+  #nav--item2 {
+    animation: var(--animation-NavSlide2);
+  }
+
+  #nav--item3 {
+    animation: var(--animation-NavSlide3);
+  }
+
+  #nav--item4 {
+    animation: var(--animation-NavSlide4);
+  }

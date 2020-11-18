@@ -1,0 +1,52 @@
+/* || Landing Section || ----------------*/
+.Landing {
+  color: #fff;
+
+  margin: 0;
+  padding: 20rem 0;
+
+  text-align: center;
+
+  background: url("../images/BeachPoolAngleDark.jpg");
+  background-size: cover;
+}
+
+.Landing--Wrapper {
+  padding-top: 8rem;
+}
+
+.Landing--Greeting {
+  color: #fff;
+
+  font-family: var(--ff-primary);
+  font-size: var(--fs-xxl);
+  font-weight: var(--fw-med);
+
+  animation: var(--animation-Slide);
+}
+
+.Landing--Description {
+  font-size: var(--fs-xs);
+  font-weight: var(--fw-med);
+
+  animation: var(--animation-Slide);
+}
+
+@media only screen and (max-width: 768px) {
+  /* Landing ----------------*/
+  .Landing {
+    background: url("../images/BeachPoolAngleDark.jpg");
+    background-size: cover;
+  }
+
+  .Landing--Greeting {
+    font-family: var(--ff-primary);
+    font-size: var(--fs-lg);
+    font-weight: var(--fw-med);
+  }
+
+  .Landing--Description {
+    font-size: var(--fs-xxs);
+    font-weight: var(--fw-low);
+  }
+}

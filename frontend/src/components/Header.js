@@ -1,31 +1,25 @@
 import React from 'react';
-import { Navbar, Nav, Container } from 'react-bootstrap';
+
+// import { Link, DirectLink, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll';
+
+const AboutSection = document.getElementsByClassName('About--Section');
 
 const Header = () => {
     return (
         <header className='Nav'>
 
-            <Navbar bg="none" variant='light' expand="lg" collapseOnSelect>
-                <Container>
-                    <Navbar.Brand href="/">Coast BnB</Navbar.Brand>
-                    <Navbar.Toggle aria-controls="basic-navbar-nav" />
-                    <Navbar.Collapse id="basic-navbar-nav">
-                        {/* ml = margin left auto/ mr = margin = margin right */}
-                        <Nav className="ml-auto">
-                            <Nav.Link href="/cart"><i className='fas fa-shopping-cart'> </i> Cart</Nav.Link>
-                            <Nav.Link href="/login"><i className='fas fa-user'></i> Login in</Nav.Link>
-                            {/* <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-                            <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-                            <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
-                            <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-                            <NavDropdown.Divider />
-                            <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
-                        </NavDropdown> */}
-                        </Nav>
-
-                    </Navbar.Collapse>
-                </Container>
-            </Navbar>
+            <nav className="navbar fixed-top navbar-expand-lg navbar-dark bg-transparent" id='navy'>
+                <a className="navbar-brand" href="/">Navbar</a>
+                <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span className="navbar-toggler-icon"></span>
+                </button>
+                <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div className="navbar-nav">
+                        <a className="navbar--items" href={AboutSection} id="nav--item1">About Us</a>
+                        <a className="navbar--items" href="/" id="nav--item2">About Us</a>
+                    </div>
+                </div>
+            </nav>
 
         </header>
     )

@@ -1,33 +1,14 @@
-@import url("https://fonts.googleapis.com/css2?family=Fauna+One&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,900&display=swap");
-
-
-@keyframes slideInFromLeft {
-  0% {
-    transform: translateX(-30%);
-  }
-  100% {
-    transform: translateX(0%);
-  }
-}
-
-
-@keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  }
-  
-
 :root {
   --main-bg-color: brown;
   --primary-bg-color: orange;
+  --white-txtcolor: #fff;
 
-  --ff-primary: "Playfair Display", "serif";
-  --ff-second: "Fauna One", "sans-serif";
+  /* || Typography */
+  --ff-primary: "Raleway", sans-serif;
+  --ff-second: "Roboto", sans-serif;
 
+  /* || Font Size */
+  --fs-xxs: 12px;
   --fs-xs: 16px;
   --fs-sm: 20px;
   --fs-md: 25px;
@@ -36,14 +17,42 @@
   --fs-xl: 55px;
   --fs-xxl: 65px;
   --fs-xxxl: 75px;
-
+  /* || Font Weight */
   --fw-low: 200;
   --fw-reg: 400;
   --fw-med: 550;
   --fw-bold: 700;
-  
-  --animation-Slide: 1s ease-out 0s 1 slideInFromLeft;
-  --animation-FadeIn: 1s ease-out 0s 1 fadeIn;
-  --animation-FadeIn3: 3s ease-out 0s 1 fadeIn;
+  /* || Animation Variables */
+  --animation-Slide: 1s ease-out 0s 1 slideIn, 2s fadeIn;
+
+  --animation-NavSlide1: 0.5s ease-out 0s 1 slideIn, 1s fadeIn;
+  --animation-NavSlide2: 0.7s ease-out 0s 1 slideIn, 1.5s fadeIn;
+  --animation-NavSlide3: 1s ease-out 0s 1 slideIn, 1.5s fadeIn;
+  --animation-NavSlide4: 1.2s ease-out 0s 1 slideIn, 1.5s fadeIn;
+
+  --animation-hover: 1.8s ease-out 0s 1 fadeIn;
 }
 
+/* || Animation KeyFranmes */
+@keyframes slideIn {
+  0% {
+    transform: translateY(550%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* @keyframes mymove {
+  from {display: none;}
+  to {display: block; animation-delay: 1s;}
+} */

@@ -1,0 +1,47 @@
+@import "./variable.css";
+/* || Room  || ----------------*/
+.Room {
+  margin: 0;
+  padding: 1rem 0 10rem 0;
+}
+
+.Room--Heading {
+  font-family: var(--ff-primary);
+  font-size: var(--fs-lg);
+  font-weight: var(--fw-med);
+}
+
+.Room--Wrapper--Cards {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.Room--Card__Description {
+  font-size: var(--fs-xs);
+  font-weight: var(--fw-low);
+}
+
+@media only screen and (max-width: 768px) {
+  .Room {
+    margin: 0;
+    padding: 1rem 0 10rem 0;
+    
+  }
+
+  .Room--Heading {
+    font-family: var(--ff-primary);
+    font-size: var(--fs-lg);
+    font-weight: var(--fw-med);
+  }
+
+  .Room--Wrapper--Cards {
+
+    display: flex;
+    flex-flow: column nowrap;
+  }
+
+  .Room--Card__Description {
+    font-size: var(--fs-xs);
+    font-weight: var(--fw-low);
+  }
+}

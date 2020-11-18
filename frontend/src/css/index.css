@@ -1,79 +1,68 @@
 @import "./variable.css";
 
-/* ---------------------------------------------------------------------------------------- */
+/*   --------------- || Desktop|| ----------------------------------------  */
 
-/* Main */
-main {
-  min-height: 80vh;
-}
+/* || Body || ----------------*/
+body {
+  font-family: var(--ff-secondary);
 
-.fas {
-  color: #000;
-}
-
-.Nav {
   background: #fff;
 }
 
-/* Body ----------------*/
-body {
-  font-family: var(--ff-secondary);
-}
 
-/* Landing ----------------*/
-.Landing {
-  color: #fff;
-
-  margin: 4rem 0 0 0;
-  padding: 20rem 8rem;
-
-  background: url("../images/Zoom-bg-bluffton-3.jpg");
-  background-size: cover;
-}
-
-.Landing-Greeting {
-  color: #fff;
-
-  font-family: var(--ff-primary);
-  font-size: var(--fs-xl);
-  font-weight: var(--fw-med);
-
-  animation: var(--animation-FadeIn);
-}
-
-.Landing-Description {
-  font-size: var(--fs-xs);
-  font-weight: var(--fw-med);
-
-  animation: var(--animation-FadeIn3);
-}
-
-/* About ----------------*/
+/* || About  || ----------------*/
 .About {
-  background: lightsalmon;
+  margin: 0;
+  padding: 7rem 0 20rem;
 }
 
-/* Room ----------------*/
-.Room {
-  background: lightgrey;
+.About--Heading {
+  font-family: var(--ff-primary);
+  font-size: var(--fs-lg);
+  font-weight: var(--fw-med);
+
+  margin: 0 0 3rem 0;
 }
 
-/* Amenities ----------------*/
+.About--Wrapper {
+  display: flex;
+  flex-flow: row nowrap;
+
+}
+.About--Description {
+  font-size: var(--fs-xs);
+  font-weight: var(--fw-low);
+}
+
+.About--Maps {
+  margin: 0 0 0 1rem;
+  width: 100%;
+  display: block;
+}
+
+
+/* || Amenities || ----------------*/
 .Amt {
   background: lightsteelblue;
 }
 
-/* RatesCalender ----------------*/
+/* || RatesCalender || ----------------*/
 .RatesCalender {
   background: lightyellow;
 }
 
-/* footer----------------*/
+/* || Footer || ----------------*/
 footer {
   background: orange;
 }
-/* ---------------------------------------------------------------------------------------- */
+
+/*   -------------------------------- || Mobile || ----------------------------------------  */
+
 @media only screen and (max-width: 768px) {
+  body {
+    font-family: var(--ff-secondary);
+  }
+
   main {
     min-height: 80vh;
   }
@@ -81,24 +70,28 @@ footer {
   .fas {
     color: #000;
   }
-  /* Landing ----------------*/
-  .Landing {
-    margin: 4rem 0 0 0;
-    padding: 20rem 4rem;
-
-    background: url("../images/Zoom-bg-bluffton-3.jpg");
-    background-size: cover;
-  }
-
+  
   /* About ----------------*/
   .About {
-    background: lightsalmon;
+    margin: 0;
+    padding: 10rem 0;
+  }
+
+  .About--Wrapper {
+    display: flex;
+    flex-flow: column nowrap;
+  
+  }
+
+  .About--Maps {
+    width: 100%;
+    display: block;
+
+    margin: 0;
   }
 
   /* Room ----------------*/
-  .Room {
-    background: lightgrey;
-  }
+  
 
   /* Amenities ----------------*/
   .Amt {
